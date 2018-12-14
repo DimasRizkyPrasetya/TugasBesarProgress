@@ -1,0 +1,24 @@
+/* *{margin:0px auto;}
+#container{
+	position:relative;
+}
+
+#content{
+	padding:10px;
+}
+#footer{
+	height:50px;
+	line-height:50px;
+	background:#333;
+    color:#fff;
+    text-align: center;
+} */
+
+#footer{
+	position:relative;
+	background:#000;
+	height:40px;
+	line-height:40px;
+	color:#fff;
+	text-align:center;
+}

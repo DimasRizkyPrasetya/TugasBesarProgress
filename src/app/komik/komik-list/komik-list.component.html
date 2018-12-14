@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-warning" (click)="onNewKomik()"><marquee><b>Tambah Komik Baru</b></marquee></button>
+        <hr align="left" width="1200px"/>
+    </div>
+    <hr>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <app-komik-item 
+        *ngFor="let komikEL of komiks; let i = index"
+        [komik]="komikEL"
+        [index]="i"></app-komik-item>
+    </div>
+</div>

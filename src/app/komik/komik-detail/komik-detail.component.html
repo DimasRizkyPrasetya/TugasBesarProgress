@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="col-xs-12">
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <img [src]="komik.imagePath" 
+    alt="{{komik.name}}" 
+    class="img-responsive"
+    style="max-height:300px">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{komik.name}}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="btn-group"
+    appDropdown>
+      <button type="button" class="btn btn-primary dropdown-toggle">
+        Edit Komik <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <!-- <li> <a (click) ="onAddData()" style="cursor:pointer;"> Data K</a></li> -->
+        <li> <a style="cursor:pointer;"(click)="onEditKomik()"> Edit Komik</a></li>
+        <li> <a style="cursor:pointer;"(click)="onDeleteKomik()"> Delete Delete</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    {{komik.description}}
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <!-- Ingredeint -->
+    <ul class="list-group">
+      <li
+      class="list-group-item"
+      *ngFor="let ingredient of komik.ingredients">
+    {{ingredient.name}}-{{ingredient.amount}}
+    </li>
+    </ul>
+  </div>
+</div>
+

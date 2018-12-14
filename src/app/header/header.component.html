@@ -1,0 +1,37 @@
+<div style = "text-align:center">
+  <img width="1000" height="400" src="../src/app/img/naruto.gif" class="img-circle" alt="Cinque Terre">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">Komiku.com</a>
+    </div>
+
+    <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+        <li routerLinkActive="active">
+            <a routerLink="/home">Home Komik</a>
+        </li> 
+      <li routerLinkActive="active">
+          <a routerLink="/komiks">Koleksi Manga</a>
+      </li> 
+      <li routerLinkActive="active">
+          <a routerLink="/data">Macam-Macam Manga</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" appDropdown>
+          <a style="cursor:pointer;" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a style="cursor:pointer;" (click)="onSaveData()">Save Data</a>
+            </li>
+            <li>
+              <a style="cursor:pointer;" (click)="onFetchData()">Fetch Data</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
